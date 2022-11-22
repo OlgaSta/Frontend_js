@@ -46,8 +46,11 @@ const primeSquares = [];
 const primeCubes = [];
 primes.forEach(sq=> {
     primeSquares.push(sq**2)});
+    primeSquares.sort((a, b) => b - a);
     console.log(primeSquares);
 
 primes.forEach(cubes=> {
     primeCubes.push(cubes**3)});
+    primeCubes.sort((a, b) => b - a);
+
     console.log(primeCubes);
